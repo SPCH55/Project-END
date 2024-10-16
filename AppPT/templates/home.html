@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ข่าวสาร</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="text-2xl font-bold">Patanque</div>
+            <div class="flex space-x-6">
+                <a href="#" class="text-lg text-gray-700 hover:text-gray-900">ข่าวสาร</a>
+                <!-- เปลี่ยนลิงก์ตรงนี้ให้ชี้ไปยัง booking.html -->
+                <a href="{% url 'booking' %}" class="text-lg text-gray-700 hover:text-gray-900">จองสนาม</a>
+            </div>
+            <button class="w-10 h-10 rounded-full bg-red-500 text-white">
+                <span class="material-icons">account_circle</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mx-auto mt-8 p-6">
+        <div class="bg-gray-200 p-6 rounded-xl shadow-lg">
+            <h1 class="text-3xl font-semibold text-center mb-6">ข่าวสารต่างๆ</h1>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- News Card 1 -->
+                <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
+                    <span class="material-icons text-6xl text-gray-500">image</span>
+                </div>
+                <!-- News Card 2 -->
+                <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
+                    <span class="material-icons text-6xl text-gray-500">image</span>
+                </div>
+                <!-- News Card 3 -->
+                <div class="bg-gray-300 rounded-lg h-64 flex items-center justify-center">
+                    <span class="material-icons text-6xl text-gray-500">image</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

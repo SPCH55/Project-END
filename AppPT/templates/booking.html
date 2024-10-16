@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>จองสนามเปตอง</title>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-4">
+            <div class="text-2xl font-bold">Patanque</div>
+            <div class="flex space-x-6">
+                <a href="{% url 'home' %}" class="text-lg text-gray-700 hover:text-gray-900">ข่าวสาร</a>
+                <a href="#" class="text-lg text-gray-700 hover:text-gray-900">จองสนาม</a>
+            </div>
+            <button class="w-10 h-10 rounded-full bg-red-500 text-white">
+                <span class="material-icons">account_circle</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Content Section -->
+    <div class="container mx-auto mt-8 p-6">
+        <div class="bg-gray-200 p-6 rounded-xl shadow-lg">
+            <h1 class="text-3xl font-semibold text-center mb-6">จองสนามเปตอง</h1>
+
+            <!-- Legend Section -->
+            <div class="flex justify-center space-x-4 mb-8">
+                <span class="bg-green-500 text-white px-4 py-2 rounded-md">ว่าง</span>
+                <span class="bg-yellow-500 text-white px-4 py-2 rounded-md">จองแล้ว</span>
+                <span class="bg-red-500 text-white px-4 py-2 rounded-md">กำลังใช้งาน</span>
+            </div>
+
+            <!-- Booking Cards -->
+            <div class="grid grid-cols-1 gap-6">
+                <!-- Card Example -->
+                <div class="bg-gray-300 rounded-lg p-4 shadow-md">
+                    <div class="flex justify-between items-center">
+                        <div class="text-lg font-semibold">สนามที่ 1</div>
+                        <a href="{% url 'booking_detail' %}" class="text-red-500 hover:underline">เพิ่มเติม >>></a>
+                    </div> 
+
+                    <div class="mt-4 bg-gray-400 h-40 flex items-center justify-center">
+                        <span class="material-icons text-6xl text-gray-500">image</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-300 rounded-lg p-4 shadow-md">
+                    <div class="flex justify-between items-center">
+                        <div class="text-lg font-semibold">สนามที่ 2</div>
+                        <a href="booking_detail.html" class="text-red-500 hover:underline">เพิ่มเติม >>></a>
+                    </div>
+                    <div class="mt-4 bg-gray-400 h-40 flex items-center justify-center">
+                        <span class="material-icons text-6xl text-gray-500">image</span>
+                    </div>
+                </div>
+
+                <div class="bg-gray-300 rounded-lg p-4 shadow-md">
+                    <div class="flex justify-between items-center">
+                        <div class="text-lg font-semibold">สนามที่ 3</div>
+                        <a href="booking_detail.html" class="text-red-500 hover:underline">เพิ่มเติม >>></a>
+                    </div>
+                    <div class="mt-4 bg-gray-400 h-40 flex items-center justify-center">
+                        <span class="material-icons text-6xl text-gray-500">image</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
